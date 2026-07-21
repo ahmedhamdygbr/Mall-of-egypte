@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 300;
+    background-color: /*#061638*/ #000;
+}
+
+
+/***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #dfb76c;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: #dfb76c;
+}
+
+.arrow {
+    font-size: 9px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(15, 15, 15, 0.95);
+    border: 1px solid rgba(223, 183, 108, 0.2);
+    border-radius: 4px;
+    list-style: none;
+    min-width: 170px;
+    padding: 10px 0;
+    margin-top: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    padding: 2px 0;
+}
+
+.dropdown-menu li a {
+    color: #d1d1d1;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: block;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    color: #dfb76c;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.login-btn {
+    background-color: #dfb76c;
+    color: #0b0c10;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    color: #0b0c10;
+    box-shadow: 0px 4px 15px rgba(223, 183, 108, 0.4);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 200;
+    color: #fff;
+}
+
+#Enter .title h2{
+    font-weight: bolder;
+    font-size: 60px;
+    margin:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3b800;
+}
+
+#Enter .title .image{
+    position: relative;
+}
+
+#Enter .title img{
+    width: 100%;
+    height: 650px;
+    filter: brightness(50%);
+}
+
+#Enter .title p{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 40px 0px;
+    top: 45%;
+    left: 7%;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+}
+
+#Enter .container .row .click{
+    width: 400px;
+    height: 280px;
+    margin: 50px 20px 50px 60px;
+    display: inline-block;
+}
+
+#Enter .container .row .item {
+    position: relative;
+    width: 400px;
+    height: 280px;
+}
+
+#Enter .container .row .item img {
+    padding: 4px;
+    border: 1px solid #d3b800;
+    border-radius: 5px 40px 5px 40px;
+    width: 400px;
+    height: 280px;
+}
+
+#Enter .container .row .item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 50%;
+    color: #fff;
+    transform: translate(10%, -30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-duration: 0.5s;
+    opacity: 0;
+    line-height: 40px;
+}
+
+#Enter .container .row .item:hover .content {
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+#Enter .container .row .item .content h4 {
+    color: #d3b800;
+    font-size: 30px;
+}
+
+#Enter .container .row .item .content a{
+    text-decoration: none;
+    color: #fff;
+    margin: 8px 0px;
+    transition-duration: 0.5s;
+}
+
+#Enter .container .row .item .content a:hover{
+    transform: scale(1.09);
+}
+
+#Enter .container .row .item .content .media a {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+#Enter .container .row .item .content .media a:nth-of-type(1){
+    color: #122d6c;
+}
+
+#Enter .container .row .item .content .media a:nth-of-type(2){
+    color: #e60e7a;
+}
+
+#Enter .container .row .item .content .media a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#Enter .container .row .item::after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 250px;
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    transform: rotate3d(-1, 1, 0, 100deg);
+    transition-duration: 0.5s;
+    opacity: 0;
+    border-radius: 5px 40px 5px 40px;
+}
+
+#Enter .container .row .item:hover::after {
+    transform: rotate3d(0, 0, 0, 0deg);
+    opacity: 1;
+}
+
+#Cosmetic .title h2{
+    font-weight: bolder;
+    font-size: 80px;
+    margin:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3b800;
+}
+
+#Cosmetic .title .image{
+    position: relative;
+}
+
+#Cosmetic .title img{
+    width: 100%;
+    height: 630px;
+    filter: brightness(50%);
+}
+
+#Cosmetic .title p{
+    font-size: 100px;
+    letter-spacing: 2px;
+    margin: 40px 0px;
+    top: 35%;
+    left: 35%;
+    text-align: justify;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+}
+
+#Cosmetic .container .row{
+    margin-left: 25px;
+}
+
+#Cosmetic .container .row .click{
+    width: 400px;
+    height: 280px;
+    margin: 50px 10px 50px 50px;
+    display: inline-block;
+}
+
+#Cosmetic .container .row .item {
+    position: relative;
+    width: 400px;
+    height: 280px;
+}
+
+#Cosmetic .container .row .item img {
+    padding: 4px;
+    border: 1px solid #d3b800;
+    border-radius: 5px 40px 5px 40px;
+    width: 400px;
+    height: 280px;
+    transition-duration: 0.5s;
+}
+
+#Cosmetic .container .row .item img:hover {
+    transform: scale(1.05);
+}
+
+#Cosmetic .title2 .image{
+    position: relative;
+}
+
+#Cosmetic .title2 img{
+    width: 100%;
+    height: 630px;
+    filter: brightness(50%);
+    margin: 50px 0px;
+}
+
+#Cosmetic .title2 p{
+    font-size: 90px;
+    letter-spacing: 2px;
+    margin: 40px 10px;
+    top: 35%;
+    left: 10%;
+    text-align: justify;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+}

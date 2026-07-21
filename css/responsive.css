@@ -1,0 +1,211 @@
+@media (max-width: 1520px) {
+
+    #Enter .title h2 {
+        font-weight: bolder;
+        font-size: 50px;
+        margin: 50px;
+        width: 400px;
+    }
+
+    #Enter .title .image {
+        width: 500px;
+    }
+
+    #Enter .title p {
+        font-size: 35px;
+        top: 35%;
+        left: 8%;
+    }
+
+    #Enter .container .row .click {
+        margin: 50px 20px 50px 50px;
+    }
+
+    #Cosmetic .title h2 {
+        font-weight: bolder;
+        font-size: 50px;
+        margin: 50px;
+        width: 450px;
+    }
+
+    #Cosmetic .title .image {
+        width: 550px;
+    }
+
+    #Cosmetic .title p {
+        font-size: 65px;
+        top: 35%;
+        left: 25%;
+    }
+
+    #Cosmetic .title2 .image {
+        width: 550px;
+    }
+
+    #Cosmetic .title2 p {
+        font-size: 70px;
+        top: 30%;
+        left: 15%;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1520px) {}
+
+@media (min-width: 500px) and (max-width: 1520px) {
+
+    #Enter .title .image {
+        width: auto;
+    }
+
+    #Enter .title h2 {
+        font-size: 52px;
+        width: auto;
+    }
+
+    #Enter .container .row {
+        margin-left: 10px;
+    }
+
+    #Cosmetic .title .image {
+        width: auto;
+    }
+
+    #Cosmetic .title h2 {
+        font-size: 52px;
+        width: auto;
+    }
+
+    #Cosmetic .title p {
+        font-size: 70px;
+        top: 35%;
+        left: 30%;
+    }
+
+    #Cosmetic .title2 .image {
+        width: auto;
+    }
+
+    #Cosmetic .title2 p {
+        font-size: 65px;
+        top: 30%;
+        left: 15%;
+        right: 12%;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1520px) {
+
+    #Enter .title h2 {
+        font-size: 70px;
+        width: auto;
+    }
+
+    #Enter .title p {
+        font-size: 35px;
+        top: 40%;
+        left: 7%;
+    }
+
+    #Enter .container .row {
+        margin-left: 120px;
+    }
+
+    #Cosmetic .title h2 {
+        font-size: 70px;
+        width: auto;
+    }
+
+    #Cosmetic .title p {
+        font-size: 80px;
+        top: 35%;
+        left: 30%;
+    }
+
+    #Cosmetic .container .row {
+        margin-left: 130px;
+    }
+
+
+    #Cosmetic .title2 .image {
+        width: auto;
+    }
+
+    #Cosmetic .title2 p {
+        font-size: 70px;
+        top: 30%;
+        left: 25%;
+        right: 15%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1520px) {
+
+    #Enter .title h2 {
+        font-size: 80px;
+        width: auto;
+    }
+
+    #Enter .container .row {
+        margin-left: 25px;
+    }
+
+    #Cosmetic .title h2 {
+        font-size: 80px;
+        width: auto;
+    }
+
+    #Cosmetic .title p {
+        font-size: 90px;
+        top: 35%;
+        left: 32%;
+    }
+
+    #Cosmetic .container .row {
+        margin-left: 15px;
+    }
+
+    #Cosmetic .title2 .image {
+        width: auto;
+    }
+
+    #Cosmetic .title2 p {
+        font-size: 80px;
+        top: 28%;
+        left: 28%;
+        right: 20%;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1520px) {
+
+    #Enter .title h2 {
+        font-size: 80px;
+        width: auto;
+    }
+
+    #Enter .container .row {
+        margin-left: 10px;
+    }
+
+    #Cosmetic .title h2 {
+        font-size: 80px;
+        width: auto;
+    }
+
+    #Cosmetic .title p {
+        font-size: 100px;
+        top: 35%;
+        left: 35%;
+    }
+
+    #Cosmetic .title2 .image {
+        width: auto;
+    }
+
+    #Cosmetic .title2 p {
+        font-size: 90px;
+        top: 28%;
+        left: 28%;
+        right: 330px;
+    }
+}
