@@ -604,41 +604,40 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+            .menu-toggle {
+                display: block;
+            }
 
-    .nav-actions {
-        margin-right: 15px;
-    }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #1a1a1a;
+                padding: 20px 0;
+                gap: 15px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+                z-index: 999;
+            }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #1a1a1a;
-        padding: 20px 0;
-        gap: 15px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-        z-index: 99;
-    }
+            .nav-links.active {
+                display: flex;
+            }
 
-    .nav-links.active {
-        display: flex;
-    }
+            .dropdown {
+                width: 100%;
+                text-align: center;
+            }
 
-    .dropdown {
-        width: 100%;
-        text-align: center;
-    }
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                background-color: #222;
+                margin-top: 10px;
+            }
 
-    .dropdown-menu {
-        position: static;
-        box-shadow: none;
-        background-color: #222;
-        margin-top: 10px;
-    }
-}
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
